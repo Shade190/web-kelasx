@@ -15,7 +15,7 @@ body {
 
 .logo {
     float: left;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: -100px;
     margin-right: -890px;
     margin-bottom: 10px;
@@ -34,7 +34,7 @@ body {
 .main-header {
     background-color: var(--primary-red);
     color: white;
-    padding: 40px 0 60px 0;
+    padding: 20px 0 20px 0;
 }
 
 .header-content {
@@ -88,7 +88,7 @@ body {
 
 /* Content Area */
 main {
-    margin-top: -30px;
+    margin-top: 10px;
     padding-bottom: 50px;
 }
 
