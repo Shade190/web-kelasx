@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #ef4444;
+    --primary-dark: #b91c1c;
+    --background-light:#f3f4f6;
+    --background-dark: #111827;
+    --card-light: #ffffff;
+    --card-dark: #1f2937;
+    --accent-yellow: #fbbf24;
+}
+
+body {
+    background-color: var(--background-light);
+    font-family: sans-serif;
+}
+
+header {
+    background-color: var(--primary);
+}
