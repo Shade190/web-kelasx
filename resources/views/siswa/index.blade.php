@@ -14,6 +14,7 @@
     </a>
     <br>
     <br>
+<<<<<<< HEAD
     <div class="siswa-grid">
         @foreach ($siswa as $wargakelas)
         <div class="team-card">
@@ -34,4 +35,18 @@
         </div>
         @endforeach
     </div>
+=======
+    @foreach ($siswa as $wargakelas)
+        <img src="{{ asset('storage/image/'. $wargakelas->image) }}" alt="gambar orang" loading="lazy">
+        <p>{{ $wargakelas->nama }}</p>
+        <p>{{ $wargakelas->jabatan }}</p>
+        <a href="{{ route('siswa.edit', $wargakelas->id) }}">edit</a>
+        <a href="{{ route('siswa.show', $wargakelas->id) }}">show</a>
+        <form action="{{ route('siswa.destroy', $wargakelas->id) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit">Delete</button>
+        </form>
+    @endforeach
+>>>>>>> 12024f83c18dbaaba0daa22a2aa8d48dfbc47227
 </x-layout>
