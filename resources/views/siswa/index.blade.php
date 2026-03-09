@@ -6,19 +6,32 @@
         </form>
     </div>
     <br>
-    <a href="{{ route('siswa.create') }}">create</a>
+    <a class="create-siswa-btn" href="{{ route('siswa.create') }}">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
+        </svg>
+        Tambah Siswa
+    </a>
     <br>
     <br>
-    @foreach ($siswa as $wargakelas)
-        <img src="{{ asset('storage/'. $wargakelas->image) }}" alt="gambar orang" loading="lazy">
-        <p>{{ $wargakelas->nama }}</p>
-        <p>{{ $wargakelas->jabatan }}</p>
-        <a href="{{ route('siswa.edit', $wargakelas->id) }}">edit</a>
-        <a href="{{ route('siswa.show', $wargakelas->id) }}">show</a>
-        <form action="{{ route('siswa.destroy', $wargakelas->id) }}" method="POST">
-            @csrf
-            @method('DELETE')
-            <button type="submit">Delete</button>
-        </form>
-    @endforeach
+    <div class="siswa-grid">
+        @foreach ($siswa as $wargakelas)
+        <div class="team-card">
+            <img src="{{ asset('storage/'. $wargakelas->image) }}" alt="gambar orang" loading="lazy">
+            <div class="info">
+                <h3>{{ $wargakelas->nama }}</h3>
+                <p>{{ $wargakelas->jabatan }}</p>
+            </div>
+            <div class="crud">
+                <a href="{{ route('siswa.edit', $wargakelas->id) }}">edit</a>
+                <a href="{{ route('siswa.show', $wargakelas->id) }}">show</a>
+                <form action="{{ route('siswa.destroy', $wargakelas->id) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+        </div>
+        @endforeach
+    </div>
 </x-layout>
