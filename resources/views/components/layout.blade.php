@@ -19,6 +19,15 @@
                 <i class="fas fa-sun"></i>
             </div>
         </div>
+        @guest
+            <a href="/login">Login</a>
+        @endguest
+        @auth
+            <form action="/logout" method="POST">
+              @csrf
+              <button type="submit">Logout</button>
+            </form>
+        @endauth
     </header>
 
     <div class="content-wrapper">
