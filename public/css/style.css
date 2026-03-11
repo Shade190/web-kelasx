@@ -14,24 +14,6 @@
     --hover-clr: #f3f4f6;
 }
 
-.darkmode{
-    --primary-red: #ef4444;
-    --primary-yellow: #f59e0b;
-    --primary-green: rgb(76, 209, 76);
-    --primary-blue: rgb(106, 106, 224);
-    --primary-brown: brown;
-    --bg-light: #1e293b;
-    --text-dark: #f8fafc;
-    --card-white: #334155;
-    --nav-clr: #334155;
-    --line-clr: #475569;
-    --text-clr: #cbd5e1;
-    --accent-clr: #ef4444;
-    --hover-clr: #475569;
-
-
-}
-
 * {
     margin: 0;
     padding: 0;
