@@ -18,6 +18,6 @@
             <label for="jabatan">jabatan:</label>
             <input type="text" id="jabatan" name="jabatan" value="{{ old('jabatan', $siswa->jabatan) }}" required>
         </div>
-        <button type="submit">Update Pengumuman</button>
+        <button type="submit">Update Siswa</button>
     </form>
 </x-layout>
