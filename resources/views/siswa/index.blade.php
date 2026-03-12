@@ -6,6 +6,7 @@
         </form>
     </div>
     <br>
+    {{-- @auth adalah akses yang hanya dibuat untuk admin --}}
     @auth
     <a class="create-siswa-btn" href="{{ route('siswa.create') }}">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
@@ -13,6 +14,7 @@
         </svg>
         Tambah Siswa
     </a>
+    {{-- akses selesai di @endauth --}}
     @endauth
     <br>
     <br>
@@ -30,6 +32,7 @@
                 <a href="{{ route('siswa.edit', $wargakelas->id) }}">edit</a>
                 <form action="{{ route('siswa.destroy', $wargakelas->id) }}" method="POST">
                     @csrf
+                    {{-- pergantian method dari post menjadi delete --}}
                     @method('DELETE')
                     <button type="submit">Delete</button>
                 </form>
