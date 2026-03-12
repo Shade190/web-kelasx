@@ -10,7 +10,6 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="container header-content">
             <div class="brand">
                 <h1>X RPL 1</h1>
                 <p>Class Management Dashboard</p>
@@ -18,14 +17,13 @@
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
             </div>
-        </div>
         @guest
-            <a href="/login">Login</a>
+            <a class="logbtn" href="/login">Login</a>
         @endguest
         @auth
             <form action="/logout" method="POST">
               @csrf
-              <button type="submit">Logout</button>
+              <button class="logbtn" type="submit">Logout</button>
             </form>
         @endauth
     </header>

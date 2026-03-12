@@ -28,17 +28,6 @@ body {
     flex-direction: column;
 }
 
-.logo {
-    float: left;
-    margin-top: 5px;
-    margin-left: -100px;
-    margin-right: -890px;
-    margin-bottom: 10px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-}
-
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -65,8 +54,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 0;
 }
 
+.brand {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 8px 20px;
+}
 .brand h1 {
     margin: 0;
     font-size: 2rem;
@@ -394,4 +389,19 @@ main {
 
 tr td li {
     list-style: none;
+}
+
+/* tombol login */
+.logbtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-yellow);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin-left: 10px;
 }
