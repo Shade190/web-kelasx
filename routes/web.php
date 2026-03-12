@@ -14,11 +14,12 @@ Route::get('/piket', function () {
     return view('piket');
 });
 
+    // halaman public yang bisa diakses
 Route::get('/siswa', [siswaController::class, 'index'])->name('siswa.index');
 Route::get('/siswa/search', [siswaController::class, 'search'])->name('siswa.search');
 Route::get('/siswa/{id}', [siswaController::class, 'show'])->whereNumber('id')->name('siswa.show');
 
-
+    // halaman public yang bisa diakses
 Route::get('/pengumuman', [pengumumanController::class, 'index'])->name('pengumuman.index');
 Route::get('/pengumuman/{id}', [pengumumanController::class, 'show'])->whereNumber('id')->name('pengumuman.show');
 
