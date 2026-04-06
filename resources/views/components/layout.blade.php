@@ -10,6 +10,7 @@
 </head>
 <body>
     <header class="main-header">
+<<<<<<< HEAD
         
     <div class="navbar-right-elements">
     <div class="brand-container">
@@ -21,6 +22,24 @@
         </div>
     </div>
 </div>
+=======
+            <div class="brand">
+                <h1>X RPL 1</h1>
+                <p>Class Management Dashboard</p>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </div>
+        @guest
+            <a class="logbtn" href="/login">Login</a>
+        @endguest
+        @auth
+            <form action="/logout" method="POST">
+              @csrf
+              <button class="logbtn" type="submit">Logout</button>
+            </form>
+        @endauth
+>>>>>>> 7391c072775dc191147b6f3b5d2a806471ccc27a
     </header>
     <div class="content-wrapper">
         <nav id="sidebar">
