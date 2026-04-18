@@ -17,7 +17,7 @@
     <div class="universal_container login-minimal">
         <div class="login-minimal-card">
             <div class="card-header">
-                <h1>Dashboard</h1>
+                <h1>Admin Login</h1>
                 <div class="header-underline"></div>
             </div>
             
